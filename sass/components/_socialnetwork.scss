@@ -1,0 +1,74 @@
+.social__network-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%; 
+    background-color: #FFFFFF;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*a ФОН */
+.social__network-link:focus,  .social__network-icon:focus {fill: #FFFFFF;
+    border-radius: 50%;
+    background-color:#2196F3; 
+}
+.social__network-link:focus .social__network-link { fill: #FFFFFF;
+    border-radius: 50%;
+    background-color:#2196F3;
+}
+.social__network-link:hover .social__network-link {
+    fill: #FFFFFF;
+    border-radius: 50%;
+    background-color:#2196F3;
+}
+.social__network-link:hover .social__network-icon {fill: #FFFFFF;
+}
+.social__network-link:focus .social__network-icon {fill: #FFFFFF;
+}
+.socials_link:focus .social__network-item {fill: #FFFFFF;
+    background-color:#2196F3;
+}
+.social__network-item:hover .social__network-link {fill: #FFFFFF;
+    border-radius: 50%;
+    background-color:#2196F3;
+}
+.social__network-item:focus .social__network-link {fill: #FFFFFF;
+    border-radius: 50%;
+    background-color:#2196F3;
+}
+.social__network-icon {fill: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__network-icon:hover, .social__network-icon:focus {
+    fill: #2196F3; 
+    border-color: #2196F3; 
+}
+.social__network-icon:focus, .social__network-icon:hover {
+    fill: #2196F3; 
+    border-color: #2196F3; 
+} 
+
+.customers__link:hover, .social__network-icon {
+    border-color: #2196F3; 
+}
+.customers__link:focus, .social__network-icon {
+    border-color: #2196F3; 
+}
+.customers__link:hover .social__network-icon {
+    fill: #2196F3; 
+    border-color: #2196F3; 
+}
+.customers__link:focus .social__network-icon {
+    fill: #2196F3; 
+    border-color: #2196F3; 
+}
+.social__network-item {
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+}
