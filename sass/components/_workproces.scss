@@ -19,7 +19,6 @@
     width: 370px;
     height: 70px;
     background-color: rgb(47, 48, 58, 0.8);
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +38,7 @@
     transition-delay: 0ms;
 }
 
-.list__item:hover .overlay__work--text {
+&:hover .overlay__work--text {
     transform: translateY(0);
 }
 .overlay {

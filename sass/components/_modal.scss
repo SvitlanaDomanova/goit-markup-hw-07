@@ -103,10 +103,11 @@
     color: #000000;
     background: #FFFFFF;
 }
-.modal-form-field:focus {
+&:focus {
     outline: 1px solid var(--button-color);
-  
 }
+&:focus +.modal-form-icon {
+    fill:  var(--button-color); }
 .modal-form-icon {
     position: absolute;
     top: 50%;
@@ -121,9 +122,6 @@
     transition-delay: 0ms;
   
 }
-.modal-form-field:focus +.modal-form-icon {
-    fill:  var(--button-color); }
-   
 .modal-form-message{
     display: block;
     width: 448px;
@@ -131,19 +129,18 @@
     resize: none;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    transition-property: outline;
-    transition-duration: 250ms, 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 12px;
     padding-top: 12px;
     font-size: 12px;
+    transition-property: outline;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
 }
-.modal-form-message:focus {
-    outline: 1px solid var(--button-color);
-   
+&:focus {
+    outline: 1px solid var(--button-color);   
 }
 .modal-form-btn {
     background-color: var(--button-color);
@@ -159,17 +156,17 @@
     border-radius: 4px;
     border: none;
     padding: 10px 52px;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms;
     margin-left: 122px;
     margin-right: 122px;
     margin-top: 28px;
     cursor: pointer;
     font-weight: 700;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
 }
-.modal-form-btn:hover, .modal-form-btn:focus {
+&:hover, &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
