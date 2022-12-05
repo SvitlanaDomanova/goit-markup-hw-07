@@ -243,8 +243,8 @@ margin: 0;
 
 .hero__btn:hover, .hero__btn:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
-} */
-/*.hero {
+} 
+.hero {
     background: var(--hero-background);
     padding: 200px 0;
     max-width: 1600px;
@@ -256,8 +256,8 @@ margin: 0;
     background-position: center;
     background: rgb(47,48,58);
     background-image: linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/Img_general.jpg);
-}*/
-/*.hero__title {
+}
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
