@@ -37,10 +37,15 @@
 }
 .container_work_card {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, &:focus {
+    &:hover, 
+    &:focus {
     display: block;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
+    &:hover,
+    .overlay_prtfl {
+        transform: translateY(0);
+    }
 }
 .about_work {
     position: relative;
@@ -67,9 +72,6 @@
     line-height: calc(28/18);
     letter-spacing: 0.03em;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover .overlay_prtfl {
-    transform: translateY(0);
-}
 }
 .essential {
     padding-top: 94px;
