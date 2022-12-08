@@ -253,15 +253,16 @@
     &:focus,
     .footer__socials__network-icon {fill: #FFFFFF;
     }
+    &:focus,  .footer__socials__network-icon:focus {fill: #FFFFFF;
+        border-radius: 50%;
+        background-color:#2196F3; 
+    }
+    &:hover .footer__socials__network-icon {fill: #FFFFFF;
+    }
+    &:focus .footer__socials__network-icon {fill: #FFFFFF;
+    }
 }
-.social_link_footer:focus,  .footer__socials__network-icon:focus {fill: #FFFFFF;
-    border-radius: 50%;
-    background-color:#2196F3; 
-}
-.social_link_footer:hover .footer__socials__network-icon {fill: #FFFFFF;
-}
-.social_link_footer:focus .footer__socials__network-icon {fill: #FFFFFF;
-}
+
 .footer__subscription-group {
     display: flex;
     align-content: center;
